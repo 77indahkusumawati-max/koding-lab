@@ -15,6 +15,12 @@ const concepts = [
   { icon: Code2, title: "Perilaku", copy: "JavaScript menambahkan logika agar antarmuka bisa merespons.", tone: "blue" },
 ];
 
+const pboConcepts = [
+  { chapter: "BAB 04", title: "Encapsulation", tag: "data + method", copy: "Membungkus data dan method di dalam class agar aksesnya terkontrol.", code: "class User {\n  private nama: string;\n\n  getNama() { return this.nama; }\n}" },
+  { chapter: "BAB 05", title: "Inheritance", tag: "parent → child", copy: "Membuat class baru berdasarkan class yang sudah ada untuk menggunakan kembali perilaku.", code: "class Admin extends User {\n  aksesDashboard() {\n    return true;\n  }\n}" },
+  { chapter: "BAB 06", title: "Polymorphism", tag: "one interface · many forms", copy: "Satu method dapat menghasilkan perilaku berbeda sesuai object yang menggunakannya.", code: "class Shape {\n  draw() { return 'shape'; }\n}\nclass Circle extends Shape {\n  draw() { return 'circle'; }\n}" },
+];
+
 const steps = [
   { key: "local", title: "Local", eyebrow: "01 · TULIS", copy: "Mulai dari folder kerja di laptopmu. Semua eksperimen aman di sini.", icon: Terminal, color: "yellow" },
   { key: "git", title: "Git", eyebrow: "02 · SIMPAN", copy: "Catat perubahan sebagai commit. Kamu selalu bisa mundur dan membandingkan.", icon: GitBranch, color: "pink" },
@@ -38,6 +44,7 @@ export default function Home() {
         <nav className={mobileOpen ? "nav-links open" : "nav-links"} aria-label="Navigasi utama">
           <a href="#materi" onClick={() => setMobileOpen(false)}>Materi</a>
           <a href="#workflow" onClick={() => setMobileOpen(false)}>Workflow</a>
+          <a href="#pbo" onClick={() => setMobileOpen(false)}>PBO</a>
           <a href="#lab" onClick={() => setMobileOpen(false)}>Code lab</a>
           <a className="nav-cta" href="#mulai" onClick={() => setMobileOpen(false)}>Mulai belajar <ArrowRight size={15} /></a>
         </nav>
@@ -65,6 +72,8 @@ export default function Home() {
       </section>
 
       <section className="chapter-rail" id="materi"><div className="rail-intro"><span className="section-number">01</span><div><span className="eyebrow">PETA BELAJAR</span><h2>Tiga lapisan<br />yang saling bicara.</h2></div></div><div className="concept-grid">{concepts.map(({ icon: Icon, title, copy, tone }) => <article className={`concept-card ${tone}`} key={title}><div className="card-icon"><Icon size={19} /></div><span className="card-index">0{concepts.findIndex((item) => item.title === title) + 1}</span><span className="concept-chip">{title === "Struktur" ? "markup" : title === "Gaya" ? "visual" : "logic"}</span><h3>{title}</h3><p>{copy}</p><a href="#lab" aria-label={`Pelajari ${title}`}>Pelajari <ArrowRight size={15} /></a></article>)}</div></section>
+
+      <section className="pbo-section" id="pbo"><div className="pbo-header"><div><span className="eyebrow"><span className="eyebrow-line" /> PBO / OBJECT ORIENTED</span><h2>Bab 04–06,<br /><em>dibuat terlihat.</em></h2></div><p>Konsep PBO bukan hanya istilah. Lihat bagaimana class, object, dan method saling terhubung dalam potongan kode berikut.</p></div><div className="pbo-grid">{pboConcepts.map((item) => <article className="pbo-card" key={item.title}><div className="pbo-meta"><span>{item.chapter}</span><span className="concept-chip">{item.tag}</span></div><h3>{item.title}</h3><p>{item.copy}</p><pre>{item.code}</pre></article>)}</div></section>
 
       <section className="workflow-section" id="workflow"><div className="section-stamp">BAB 02 <span>VERSION CONTROL</span></div><div className="workflow-heading"><div><span className="eyebrow">WORKFLOW VISUAL</span><h2>Dari folder kosong<br />ke <em>siap kolaborasi.</em></h2></div><p>Git bukan tempat menyimpan kode. Git adalah cara memberi nama pada setiap langkahmu.</p></div><div className="workflow-map"><div className="flow-line" />{steps.map(({ key, title, eyebrow, copy, icon: Icon, color }, index) => <button key={key} className={`workflow-step ${color} ${activeStep === key ? "active" : ""}`} onClick={() => setActiveStep(key)}><div className="step-top"><span>{eyebrow}</span><span>0{index + 1}</span></div><div className="step-icon"><Icon size={22} /></div><h3>{title}</h3><p>{copy}</p><span className="step-action">{activeStep === key ? "Sedang dilihat" : "Lihat detail"} <ArrowRight size={14} /></span></button>)}</div><div className="active-detail"><div className="detail-label">KAMU SEDANG DI SINI</div><div><strong>{steps.find((step) => step.key === activeStep)?.title}</strong><span>{steps.find((step) => step.key === activeStep)?.copy}</span></div><div className="detail-progress"><i className={activeStep === "local" ? "on" : "on"} /><i className={activeStep !== "local" ? "on" : ""} /><i className={activeStep === "github" ? "on" : ""} /></div></div></section>
 
