@@ -49,3 +49,11 @@
 - [x] Pastikan teks putih memiliki kontras yang baik di atas bidang biru.
 - [x] Uji tampilan dan build.
 - [ ] Simpan checkpoint hasil revisi.
+
+## Background Biru dan Nama Indah
+
+- [x] Ubah background utama dan section terang menjadi biru yang lebih jelas.
+- [x] Ganti default nama object Alya menjadi Indah.
+- [x] Pastikan output demo dan contoh kode menyebut Indah.
+- [x] Uji tampilan dan demo setelah revisi.
+- [ ] Simpan checkpoint hasil revisi.

@@ -31,7 +31,7 @@ const steps = [
 export default function Home() {
   const [activeStep, setActiveStep] = useState("git");
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [pboName, setPboName] = useState("Alya");
+  const [pboName, setPboName] = useState("Indah");
   const [shape, setShape] = useState<"circle" | "rectangle">("circle");
   const [demoOutput, setDemoOutput] = useState("Pilih salah satu tombol demo untuk menjalankan object dan method PBO.");
   const [demoRunId, setDemoRunId] = useState(0);
