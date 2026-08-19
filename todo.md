@@ -33,3 +33,10 @@
 - [x] Pastikan setiap tombol utama punya aksi nyata atau feedback yang jelas.
 - [x] Uji demo PBO, copy code, navigasi, workflow, dan CTA.
 - [ ] Simpan checkpoint hasil revisi.
+
+## Output Demo Lokal
+
+- [x] Simpan output terakhir untuk masing-masing kartu konsep.
+- [x] Tampilkan output langsung di bawah tombol kartu yang ditekan.
+- [x] Tambahkan animasi lokal tanpa scroll otomatis.
+- [x] Uji ketiga kartu dan simpan checkpoint revisi.
