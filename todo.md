@@ -40,3 +40,12 @@
 - [x] Tampilkan output langsung di bawah tombol kartu yang ditekan.
 - [x] Tambahkan animasi lokal tanpa scroll otomatis.
 - [x] Uji ketiga kartu dan simpan checkpoint revisi.
+
+## Brand Indah dan Tema Biru
+
+- [x] Ganti semua wordmark Koding Lab yang tampil menjadi Indah.
+- [x] Perbarui title dan metadata website.
+- [x] Terapkan palet dominan biru dengan variasi bidang dan tekstur.
+- [x] Pastikan teks putih memiliki kontras yang baik di atas bidang biru.
+- [x] Uji tampilan dan build.
+- [ ] Simpan checkpoint hasil revisi.
