@@ -24,3 +24,12 @@
 - [x] Pastikan tombol Jalankan demo, copy code, navigasi mobile, dan CTA tidak menjadi dead end.
 - [x] Uji alur demo di desktop dan mobile.
 - [ ] Simpan checkpoint versi perbaikan.
+
+## Revisi Copy, Warna, dan Tombol
+
+- [x] Hilangkan frasa yang terlalu literal seperti “Bab 04–06” dari tampilan utama.
+- [x] Tulis ulang headline dan deskripsi agar lebih natural dan orisinal.
+- [x] Perkuat warna section dan kartu tanpa mengorbankan keterbacaan.
+- [x] Pastikan setiap tombol utama punya aksi nyata atau feedback yang jelas.
+- [x] Uji demo PBO, copy code, navigasi, workflow, dan CTA.
+- [ ] Simpan checkpoint hasil revisi.
