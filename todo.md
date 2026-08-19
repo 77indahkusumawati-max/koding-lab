@@ -57,3 +57,12 @@
 - [x] Pastikan output demo dan contoh kode menyebut Indah.
 - [x] Uji tampilan dan demo setelah revisi.
 - [ ] Simpan checkpoint hasil revisi.
+
+## Koding Lab dan Scroll Demo
+
+- [x] Kembalikan wordmark, title, dan footer menjadi Koding Lab.
+- [x] Saat demo dijalankan, scroll halus ke output console.
+- [x] Pertahankan hasil lokal di bawah tombol kartu.
+- [x] Uji nama Indah, output, dan tombol demo.
+- [ ] Evaluasi kekurangan untuk target nilai 100.
+- [ ] Simpan checkpoint revisi.

@@ -42,6 +42,7 @@ export default function Home() {
     setDemoOutput(output);
     setDemoRunId((current) => current + 1);
     setCardOutputs((current) => ({ ...current, [type]: output }));
+    window.setTimeout(() => document.getElementById("pbo-console")?.scrollIntoView({ behavior: "smooth", block: "center" }), 80);
   };
 
   const copyCode = async () => {
@@ -58,7 +59,7 @@ export default function Home() {
     <main className="site-shell">
       <div className="grain" aria-hidden="true" />
       <header className="topbar">
-        <a className="brand" href="#top" aria-label="Indah beranda"><span className="brand-mark"><span /><span /><span /></span><span>INDAH</span></a>
+        <a className="brand" href="#top" aria-label="Koding Lab beranda"><span className="brand-mark"><span /><span /><span /></span><span>KODING LAB</span></a>
         <nav className={mobileOpen ? "nav-links open" : "nav-links"} aria-label="Navigasi utama">
           <a href="#materi" onClick={() => setMobileOpen(false)}>Materi</a>
           <a href="#workflow" onClick={() => setMobileOpen(false)}>Workflow</a>
@@ -99,7 +100,7 @@ export default function Home() {
 
       <section className="lab-section" id="lab"><div className="lab-heading"><div><span className="eyebrow"><span className="eyebrow-line" /> CODE LAB</span><h2>Belajar lewat<br /><em>baris pertama.</em></h2></div><p>Salin snippet ini, jalankan di terminal, lalu lihat bagaimana tiga perintah kecil membentuk workflow.</p></div><div className="code-window"><div className="window-bar"><span className="window-dots"><i /><i /><i /></span><span>~/koding-lab/project</span><button onClick={copyCode}><Clipboard size={15} /> Salin kode</button></div><div className="code-body"><div className="line-numbers">1<br />2<br />3</div><pre><span className="prompt">$</span> <span className="cmd">git add</span> .<br /><span className="prompt">$</span> <span className="cmd">git commit</span> -m <span className="string">"first commit"</span><br /><span className="prompt">$</span> <span className="cmd">git push</span> origin main</pre><div className="code-aside"><span className="pulse" /> 3 langkah<br /><small>untuk satu<br />perubahan yang<br />tercatat.</small></div></div></div></section>
 
-      <footer id="mulai"><div className="footer-mark"><span className="brand-mark"><span /><span /><span /></span><strong>INDAH</strong><span className="footer-node-trail"><i /><i /><i /></span></div><div><span className="eyebrow">NEXT CHAPTER</span><h2>Ruang belajar<br /><em>yang kamu bangun sendiri.</em></h2></div><a className="button button-dark" href="#top">Kembali ke atas <ArrowRight size={17} /></a><div className="footer-bottom"><span>© 2026 Indah</span><span>Belajar visual. Bangun nyata.</span></div></footer>
+      <footer id="mulai"><div className="footer-mark"><span className="brand-mark"><span /><span /><span /></span><strong>KODING LAB</strong><span className="footer-node-trail"><i /><i /><i /></span></div><div><span className="eyebrow">NEXT CHAPTER</span><h2>Ruang belajar<br /><em>yang kamu bangun sendiri.</em></h2></div><a className="button button-dark" href="#top">Kembali ke atas <ArrowRight size={17} /></a><div className="footer-bottom"><span>© 2026 Koding Lab</span><span>Belajar visual. Bangun nyata.</span></div></footer>
     </main>
   );
 }
