@@ -66,3 +66,11 @@
 - [x] Uji nama Indah, output, dan tombol demo.
 - [ ] Evaluasi kekurangan untuk target nilai 100.
 - [ ] Simpan checkpoint revisi.
+
+## Scroll ke Hasil Kartu
+
+- [x] Ganti target scroll dari console besar ke output lokal kartu yang baru muncul.
+- [x] Beri id atau ref pada output setiap kartu.
+- [x] Uji ketiga tombol agar fokus berhenti di hasil kartu masing-masing.
+- [ ] Tambahkan checklist manual untuk push GitHub, pencocokan modul, dan presentasi.
+- [ ] Simpan checkpoint revisi.
