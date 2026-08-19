@@ -74,3 +74,12 @@
 - [x] Uji ketiga tombol agar fokus berhenti di hasil kartu masing-masing.
 - [ ] Tambahkan checklist manual untuk push GitHub, pencocokan modul, dan presentasi.
 - [ ] Simpan checkpoint revisi.
+
+## Modul Guru dan GitHub
+
+- [ ] Cocokkan istilah demo dengan istilah PBO pada materi guru.
+- [ ] Tambahkan penjelasan singkat yang mudah dipresentasikan untuk setiap demo.
+- [ ] Periksa status autentikasi GitHub dan remote repository.
+- [ ] Siapkan perubahan untuk commit.
+- [ ] Minta konfirmasi sebelum push ke repository.
+- [ ] Verifikasi hasil push dan link repository.

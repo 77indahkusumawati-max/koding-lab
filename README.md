@@ -1,14 +1,20 @@
 # Koding Lab — Website Tugas PBO
 
-Koding Lab adalah website pembelajaran interaktif yang menerapkan konsep Pemrograman Berorientasi Objek (PBO) Bab 4–6 dalam bentuk materi visual dan demo yang dapat dijalankan.
+Koding Lab adalah website pembelajaran interaktif yang menerapkan konsep Pemrograman Berorientasi Objek dalam bentuk materi visual dan demo yang dapat dijalankan.
 
 ## Konsep PBO yang Diterapkan
 
-| Bab | Konsep | Implementasi |
+| Konsep | Implementasi pada website | Penjelasan saat presentasi |
 |---|---|---|
-| Bab 4 | Encapsulation | Class `User` menyimpan `username` dan `role` sebagai properti private, lalu mengaksesnya melalui getter dan setter. |
-| Bab 5 | Inheritance | Class `Admin` mewarisi class `User` menggunakan `extends` dan menambahkan method `getPermissions()`. |
-| Bab 6 | Polymorphism | Class abstract `Shape` memiliki method `draw()`. Class `Circle` dan `Rectangle` mengimplementasikan method yang sama dengan output berbeda. |
+| Encapsulation | Class `User` menyimpan `username` dan `role` sebagai properti private, lalu mengaksesnya melalui getter dan setter. | “Encapsulation digunakan untuk melindungi data di dalam class. Data tidak diubah langsung dari luar, tetapi diakses melalui method.” |
+| Inheritance | Class `Admin` mewarisi class `User` menggunakan `extends` dan menambahkan method `getPermissions()`. | “Inheritance memungkinkan class baru memakai atribut dan perilaku class induknya, kemudian menambahkan kemampuan khusus.” |
+| Polymorphism | Class `Shape` memiliki method `draw()`. Class `Circle` dan `Rectangle` menggunakan method yang sama dengan output berbeda. | “Polymorphism berarti satu method dapat menghasilkan perilaku berbeda sesuai object yang menjalankannya.” |
+
+> Urutan dan nama bab pada tabel perlu kamu cocokkan lagi dengan modul atau slide guru. Konsep yang ditampilkan tetap Encapsulation, Inheritance, dan Polymorphism karena itulah konsep yang benar-benar digunakan dalam source code.
+
+## Cara Mencoba Demo
+
+Buka bagian **Konsep**, isi nama object bila diperlukan, lalu tekan tombol **Jalankan demo** pada salah satu kartu. Hasil akan muncul langsung di bawah tombol yang ditekan dan halaman akan mengarahkan perhatian ke hasil tersebut. Demo console di bawahnya juga ikut memperbarui output.
 
 ## Struktur Penting
 
@@ -30,14 +36,14 @@ Buat repository baru di GitHub, kemudian jalankan perintah berikut dari folder p
 ```bash
 git init
 git add .
-git commit -m "Membuat website PBO Bab 4-6"
+git commit -m "Membuat website PBO interaktif"
 git branch -M main
 git remote add origin https://github.com/USERNAME/NAMA-REPOSITORY.git
 git push -u origin main
 ```
 
-Ganti `USERNAME/NAMA-REPOSITORY` dengan alamat repository milik sendiri. Setelah berhasil, kirim link repository GitHub tersebut sesuai instruksi tugas.
+Ganti `USERNAME/NAMA-REPOSITORY` dengan alamat repository milikmu. Jika repository sudah memiliki remote, gunakan `git remote -v` untuk memeriksanya dan lanjutkan dengan `git push`.
 
-## Catatan Pengumpulan
+## Checklist Pengumpulan
 
-Sebelum mengirim link, pastikan repository dapat dibuka, file `README.md` terlihat, project dapat dijalankan, dan bagian PBO menampilkan demo Encapsulation, Inheritance, serta Polymorphism.
+Sebelum mengirim link, pastikan repository dapat dibuka, file `README.md` terlihat, project dapat dijalankan, bagian konsep memiliki demo yang dapat ditekan, dan kamu dapat menjelaskan fungsi setiap class secara singkat.
