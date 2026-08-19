@@ -16,3 +16,11 @@
 - [x] Buat README tugas dengan deskripsi, konsep PBO, cara menjalankan, dan cara push GitHub.
 - [x] Jalankan typecheck, build, dan verifikasi visual.
 - [ ] Simpan checkpoint versi siap dikumpulkan.
+
+## Perbaikan Interaksi dan Animasi
+
+- [x] Audit semua tombol dan link pada halaman utama.
+- [x] Tambahkan animasi transisi saat output demo PBO berubah.
+- [x] Pastikan tombol Jalankan demo, copy code, navigasi mobile, dan CTA tidak menjadi dead end.
+- [x] Uji alur demo di desktop dan mobile.
+- [ ] Simpan checkpoint versi perbaikan.
